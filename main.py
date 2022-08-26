@@ -1,5 +1,10 @@
 import socket
 socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
+def send(data, ip, channel):
+  host = ip
+  port = channel
+  socket.create_connection(host, port)
+  socket.send.all()
 def fetch():
   db = open("database.txt", "r")
   user_exist = input("Enter your username: ")
